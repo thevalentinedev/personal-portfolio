@@ -1,4 +1,4 @@
-# 💼 Valentine Ohalebo — Personal Portfolios
+# 💼 Valentine Ohalebo — Personal Portfolio
 
 Welcome to the source code of my personal developer portfolio — [codebyval.ca](https://codebyval.ca).  
 This portfolio is built to showcase my work, technical skills, and background as a creative frontend developer focused on execution.
