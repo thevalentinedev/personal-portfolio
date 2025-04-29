@@ -4,7 +4,7 @@
 
 # Ignore sensitive PHP scripts
 assets/php/contact.php
-deploy.php
+assets/php/deploy.php
 
 # Ignore OS/system files
 .DS_Store
