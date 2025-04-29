@@ -3,7 +3,7 @@
 .htpasswd
 
 # Ignore sensitive PHP scripts
-contact.php
+assets/php/contact.php
 deploy.php
 
 # Ignore OS/system files
