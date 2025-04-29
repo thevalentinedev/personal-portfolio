@@ -1,0 +1,29 @@
+# Ignore Apache and server config
+.htaccess
+.htpasswd
+
+# Ignore sensitive PHP scripts
+contact.php
+deploy.php
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Node / frontend tools (if used)
+node_modules/
+dist/
+build/
+.env
+
+# IDE/editor junk
+.vscode/
+*.log
+
+# Git folder itself (don't mess with it manually)
+.git/
+
+# Backup & temp files
+*.bak
+*.tmp
+*.swp
