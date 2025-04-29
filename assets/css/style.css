@@ -186,6 +186,16 @@ body.light-mode textarea {
     color: #1a1a1a;
 }
 
+body.light-mode input:focus,
+body.light-mode textarea:focus {
+
+    border-bottom: 1px solid var(--primary-color);
+    outline: none;
+    color: white;
+    caret-color: var(--primary-color);
+    transition: border-color 0.3s ease;
+}
+
 body.light-mode form ::placeholder {
     color: #999999;
 }
