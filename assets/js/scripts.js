@@ -864,6 +864,8 @@ function lightbox_setup() {
 			$(".gcontainer #glightbox-slider").hide();
 			$(".gcontainer .gslide-media").hide();
 
+			//hide topbar
+			$(".top-bar").hide();
 
 			var block = false;
 			var info_open = false;
@@ -922,8 +924,11 @@ function lightbox_setup() {
 			});
 			setTimeout(function () {
 				$(".glightbox-container .info-button").trigger("click");
-			}, 100); // instead of 100
-
+			}, 100);
+			lightbox.on('close', function () {
+				$(".top-bar").show();
+			});
+			
 
 		});
 
