@@ -1,0 +1,43 @@
+/******************************************************************
+
+
+	-----------------------------
+	----- TABLE OF CONTENTS -----
+	-----------------------------
+	
+	--  1.Future Blue
+ 
+ ******************************************************************/
+
+
+/** 2. Future Blue
+*******************************************************************/
+
+.colors_future_blue .c_cursor_inner,
+.colors_future_blue .m-menu-button:hover .burger .line {
+    background: var(--primary-color) !important;
+}
+
+.colors_future_blue .c_cursor_outer .bg,
+.colors_future_blue .c_cursor_outer .circle,
+.colors_future_blue .m-menu .m-menu-inner .main-items>li a.is-active span:after {
+    border-color: var(--primary-color) !important;
+}
+
+.colors_future_blue ::selection {
+    color: var(--primary-color) !important;
+}
+
+.colors_future_blue ::-moz-selection {
+    color: var(--primary-color) !important;
+}
+
+.colors_future_blue .m-menu .m-menu-inner .main-items li:hover p,
+.colors_future_blue .m-menu .m-menu-inner .main-items a.is-active p,
+.colors_future_blue .m-menu .m-menu-inner .social-items a:hover span,
+.colors_future_blue .glightbox-container .gbtn:hover span,
+.colors_future_blue .m-menu .m-menu-inner .main-items>li a.is-active span,
+.colors_future_blue .m-menu .m-menu-inner .main-items>li a:hover span,
+.colors_future_blue .options-panel .close-button:hover {
+    color: var(--primary-color) !important;
+}
