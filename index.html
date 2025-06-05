@@ -524,9 +524,9 @@
                             <!-- FORM -->
                             <form id="contact-form" action="assets/contact.php" method="post" autocomplete="off">
                                 <input type="text" id="contact-form-name" class="scroll-animation" name="name"
-                                    placeholder="* Name">
+                                    placeholder="* Name" required>
                                 <input type="text" id="contact-form-email" class="scroll-animation m-t-5" name="email"
-                                    placeholder="* E-Mail">
+                                    placeholder="* E-Mail" required>
                                 <input data-require-filling="false" type="text" id="contact-form-phone"
                                     class="scroll-animation m-t-5" name="phone" placeholder="Phone">
 
@@ -536,7 +536,7 @@
                                 <!--  / HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THE COUNTRY FIELD -->
 
                                 <textarea id="contact-form-message" class="scroll-animation m-t-5" name="message"
-                                    placeholder="* Message"></textarea>
+                                    placeholder="* Message" required></textarea>
 
                                 <!-- Cloudflare Validation -->
                                 <div class="cf-turnstile m-t-3" data-sitekey="0x4AAAAAABWpcHtGlkuFXSR4"></div>
