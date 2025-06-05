@@ -1,13 +1,13 @@
 # 💼 Valentine Ohalebo — Personal Portfolio
 
-Welcome to the source code of my personal developer portfolio — [codebyval.com](https://codebyval.com).  
+Welcome to the source code of my personal developer portfolio — [valentine.dev](https://valentine.dev).  
 This portfolio is built to showcase my work, technical skills, and background as a creative frontend developer focused on execution.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 [codebyval.com](https://codebyval.com)
+👉 [valentine.dev](https://valentine.dev)
 
 ---
 
@@ -59,7 +59,7 @@ An event discovery platform built with real-time filtering, map integration, and
 ## 📫 Contact
 
 If you'd like to work together or want to talk shop, reach me at:  
-📧 [hello@codebyval.com](mailto:hello@codebyval.com)
+📧 [hello@valentine.dev](mailto:hello@valentine.dev)
 
 ---
 
