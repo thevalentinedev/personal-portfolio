@@ -269,7 +269,8 @@ function carousel_setup() {
 	const awardDescriptions = [
 		"Ontario College Diploma – Graduated with a GPA of 3.92 and High Distinction from Conestoga College.",
 		"Best of Program Award Certificate – Awarded for outstanding academic excellence and top performance.",
-		"Best Final Year Project (Tech Showcase) – Recognized for delivering the top capstone project of 2025 at Conestoga College’s Applied Computer Science & IT Showcase."
+		"Best Final Year Project (Tech Showcase) – Recognized for delivering the top capstone project of 2025 at Conestoga College’s Applied Computer Science & IT Showcase.",
+		"Completed a Coursera course authorized by Johns Hopkins University, covering modern frontend fundamentals and responsive web design."
 	];
 
 	// Manually trigger first description on load
