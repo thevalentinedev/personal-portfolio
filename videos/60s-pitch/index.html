@@ -3,348 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine Ohalebo - Full Stack Developer</title>
-    <meta name="description" content="Full Stack Developer with 4+ years of experience crafting scalable web applications using React, Next.js, and TypeScript.">
     
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fff;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            padding: 2rem 0;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-        }
-
-        .brand {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #000;
-            text-decoration: none;
-            letter-spacing: -0.02em;
-        }
-
-        .brand .dev {
-            color: #6D5DD3;
-        }
-
-        /* Main Content */
-        main {
-            padding: 3rem 0;
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .intro h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #000;
-            letter-spacing: -0.03em;
-        }
-
-        .intro p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Video Section */
-        .video-section {
-            margin: 3rem 0;
-            text-align: center;
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            aspect-ratio: 16/9;
-        }
-
-        .video-container video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            text-align: center;
-            margin: 3rem 0;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.875rem 2rem;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: #6D5DD3;
-            color: #fff;
-        }
-
-        .btn-primary:hover {
-            background: #5A4BC4;
-            transform: translateY(-1px);
-        }
-
-        .btn-secondary {
-            background: #fff;
-            color: #6D5DD3;
-            border: 2px solid #6D5DD3;
-        }
-
-        .btn-secondary:hover {
-            background: #6D5DD3;
-            color: #fff;
-            transform: translateY(-1px);
-        }
-
-        /* Social Media */
-        .social-section {
-            text-align: center;
-            margin: 3rem 0;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 48px;
-            height: 48px;
-            background: #f8f9fa;
-            border-radius: 50%;
-            color: #666;
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        .social-link:hover {
-            background: #6D5DD3;
-            color: #fff;
-            transform: translateY(-2px);
-        }
-
-        .social-link svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        /* Footer */
-        footer {
-            border-top: 1px solid #eee;
-            padding: 2rem 0;
-            text-align: center;
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .video-container {
-                max-width: 800px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 20px;
-            }
-
-            main {
-                padding: 2rem 0;
-            }
-
-            .intro {
-                margin-bottom: 2.5rem;
-            }
-
-            .intro h1 {
-                font-size: 2.2rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .intro p {
-                font-size: 1.05rem;
-                line-height: 1.5;
-                padding: 0 10px;
-            }
-
-            .video-section {
-                margin: 2.5rem 0;
-                padding: 0 10px;
-            }
-
-            .video-container {
-                max-width: 100%;
-                margin: 0 auto;
-                border-radius: 12px;
-                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-            }
-
-            .cta-section {
-                margin: 2.5rem 0;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-                margin-top: 2rem;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 320px;
-                padding: 1rem 2rem;
-                font-size: 1.05rem;
-                justify-content: center;
-            }
-
-            .social-section {
-                margin: 2.5rem 0;
-            }
-
-            .social-icons {
-                gap: 1.2rem;
-            }
-
-            .social-link {
-                width: 52px;
-                height: 52px;
-            }
-
-            .social-link svg {
-                width: 22px;
-                height: 22px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 16px;
-            }
-
-            header {
-                padding: 1.5rem 0;
-            }
-
-            main {
-                padding: 1.5rem 0;
-            }
-
-            .intro h1 {
-                font-size: 1.9rem;
-                margin-bottom: 1.2rem;
-            }
-
-            .intro p {
-                font-size: 1rem;
-                padding: 0 5px;
-            }
-
-            .video-section {
-                padding: 0 8px;
-            }
-
-            .video-container {
-                border-radius: 10px;
-                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
-            }
-
-            .btn {
-                max-width: 280px;
-                padding: 0.9rem 1.5rem;
-                font-size: 1rem;
-            }
-
-            .brand {
-                font-size: 1.3rem;
-            }
-
-            .social-icons {
-                gap: 1rem;
-            }
-
-            .social-link {
-                width: 48px;
-                height: 48px;
-            }
-
-            .social-link svg {
-                width: 20px;
-                height: 20px;
-            }
-        }
-
-        /* Large screens - utilize more space */
-        @media (min-width: 1200px) {
-            .video-container {
-                max-width: 1000px;
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .container {
-                max-width: 1400px;
-            }
-            
-            .video-container {
-                max-width: 1200px;
-            }
-        }
-    </style>
+    <!-- Primary Meta Tags -->
+    <title>Valentine Ohalebo – I Build Fast, Scalable Tools That Actually Get Used</title>
+    <meta name="title" content="Valentine Ohalebo – I Build Fast, Scalable Tools That Actually Get Used">
+    <meta name="description" content="Here's a 60-second video showing how I build, what I ship, and why it's worth your time. Resume + portfolio inside.">
+    <meta name="keywords" content="Valentine Ohalebo, Full Stack Developer, React, Next.js, TypeScript, Web Developer, Software Engineer, Portfolio">
+    <meta name="author" content="Valentine Ohalebo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://valentine.dev">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valentine.dev">
+    <meta property="og:title" content="Valentine Ohalebo – I Build Fast, Scalable Tools That Actually Get Used">
+    <meta property="og:description" content="Here's a 60-second video showing how I build, what I ship, and why it's worth your time. Resume + portfolio inside.">
+    <meta property="og:image" content="https://valentine.dev/assets/image/60s-pitch-thumbnail.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Valentine Ohalebo - Full Stack Developer Video Pitch">
+    <meta property="og:site_name" content="Valentine.dev">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://valentine.dev">
+    <meta property="twitter:title" content="Valentine Ohalebo – I Build Fast, Scalable Tools That Actually Get Used">
+    <meta property="twitter:description" content="Here's a 60-second video showing how I build, what I ship, and why it's worth your time. Resume + portfolio inside.">
+    <meta property="twitter:image" content="https://valentine.dev/assets/image/60s-pitch-thumbnail.jpeg">
+    <meta property="twitter:image:alt" content="Valentine Ohalebo - Full Stack Developer Video Pitch">
+    <meta property="twitter:creator" content="@thevalentinedev">
+    <meta property="twitter:site" content="@thevalentinedev">
+    
+    <!-- LinkedIn -->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="article:author" content="Valentine Ohalebo">
+    <meta property="profile:first_name" content="Valentine">
+    <meta property="profile:last_name" content="Ohalebo">
+    <meta property="profile:username" content="valentine-ohalebo">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#6D5DD3">
+    <meta name="msapplication-TileColor" content="#6D5DD3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Valentine.dev">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Valentine Ohalebo",
+      "jobTitle": "Full Stack Developer",
+      "description": "Full Stack Developer with 4+ years of experience crafting scalable web applications using React, Next.js, and TypeScript",
+      "url": "https://valentine.dev",
+      "image": "https://valentine.dev/assets/image/60s-pitch-thumbnail.jpeg",
+      "sameAs": [
+        "https://github.com/thevalentinedev",
+        "https://www.linkedin.com/in/valentine-ohalebo-51bb37221/",
+        "https://www.instagram.com/thevalentinedev/",
+        "https://www.facebook.com/people/Valentine-Ohalebo/61554448273077/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Waterloo",
+        "addressRegion": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "email": "hello@valentine.dev",
+      "knowsAbout": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Full Stack Development",
+        "Web Development",
+        "Software Engineering"
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -411,7 +157,7 @@
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </a>
-                    <a href="https://www.instagram.com/codebyval/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                    <a href="https://www.instagram.com/thevalentinedev/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>

@@ -1,0 +1,370 @@
+
+        /* Satoshi Font Face Declarations */
+        @font-face {
+            font-family: 'Satoshi';
+            src: url('../../assets/fonts/Satoshi-Regular.woff2') format('woff2'),
+                 url('../../assets/fonts/Satoshi-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Satoshi';
+            src: url('../../assets/fonts/Satoshi-Medium.woff2') format('woff2'),
+                 url('../../assets/fonts/Satoshi-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Satoshi';
+            src: url('../../assets/fonts/Satoshi-Bold.woff2') format('woff2'),
+                 url('../../assets/fonts/Satoshi-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .brand .dev {
+            color: #6D5DD3;
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .intro h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+            letter-spacing: -0.03em;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Video Section */
+        .video-section {
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            aspect-ratio: 16/9;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Satoshi', sans-serif;
+        }
+
+        .btn-primary {
+            background: #6D5DD3;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #5A4BC4;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: #6D5DD3;
+            border: 2px solid #6D5DD3;
+        }
+
+        .btn-secondary:hover {
+            background: #6D5DD3;
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        /* Social Media */
+        .social-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            color: #666;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .social-link:hover {
+            background: #6D5DD3;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #eee;
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .video-container {
+                max-width: 800px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            main {
+                padding: 2rem 0;
+            }
+
+            .intro {
+                margin-bottom: 2.5rem;
+            }
+
+            .intro h1 {
+                font-size: 2.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .intro p {
+                font-size: 1.05rem;
+                line-height: 1.5;
+                padding: 0 10px;
+            }
+
+            .video-section {
+                margin: 2.5rem 0;
+                padding: 0 10px;
+            }
+
+            .video-container {
+                max-width: 100%;
+                margin: 0 auto;
+                border-radius: 12px;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            }
+
+            .cta-section {
+                margin: 2.5rem 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 320px;
+                padding: 1rem 2rem;
+                font-size: 1.05rem;
+                justify-content: center;
+            }
+
+            .social-section {
+                margin: 2.5rem 0;
+            }
+
+            .social-icons {
+                gap: 1.2rem;
+            }
+
+            .social-link {
+                width: 52px;
+                height: 52px;
+            }
+
+            .social-link svg {
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            header {
+                padding: 1.5rem 0;
+            }
+
+            main {
+                padding: 1.5rem 0;
+            }
+
+            .intro h1 {
+                font-size: 1.9rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .intro p {
+                font-size: 1rem;
+                padding: 0 5px;
+            }
+
+            .video-section {
+                padding: 0 8px;
+            }
+
+            .video-container {
+                border-radius: 10px;
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+            }
+
+            .btn {
+                max-width: 280px;
+                padding: 0.9rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .brand {
+                font-size: 1.3rem;
+            }
+
+            .social-icons {
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: 48px;
+                height: 48px;
+            }
+
+            .social-link svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        /* Large screens - utilize more space */
+        @media (min-width: 1200px) {
+            .video-container {
+                max-width: 1000px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            .video-container {
+                max-width: 1200px;
+            }
+        }
