@@ -609,7 +609,7 @@ function menu_setup() {
 	// Scroll to section on nav item click
 	function setupLinks(scroller) {
 
-		let linkElements = gsap.utils.toArray('.m-menu .main-items a.scroll-to'),
+		let linkElements = gsap.utils.toArray('.m-menu .main-items a.scroll-to, .hero-cta a.scroll-to'),
 			linkTargets = linkElements.map(function (e) { return document.querySelector(e.getAttribute("href")) }),
 			linkPositions = [],
 			calculatePositions = function calculatePositions() {

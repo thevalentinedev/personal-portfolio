@@ -1,70 +1,57 @@
-# 💼 Valentine Ohalebo — Personal Portfolio
+# Valentine Ohalebo — Personal Portfolio
 
-Welcome to the source code of my personal developer portfolio — [valentine.dev](https://valentine.dev).  
-This portfolio is built to showcase my work, technical skills, and background as a creative frontend developer focused on execution.
-
----
-
-## 🚀 Live Demo
-
-👉 [valentine.dev](https://valentine.dev)
+Source for [valentine.dev](https://valentine.dev) — portfolio of a **founding engineer** building AI-powered SaaS and production web products.
 
 ---
 
-## 🧠 Overview
+## Live site
 
-A modern, minimal, and bold portfolio designed to reflect both engineering precision and visual storytelling. Built to impress premium companies, agencies, and startups.
-
----
-
-## 🛠️ Tech Stack
-
-**Frontend:**
-- Next.js  
-- React  
-- Tailwind CSS  
-
-**Backend (for select projects):**
-- Node.js  
-- MongoDB  
-- Google Maps API  
-- Nodemailer  
-
-**Design & Tools:**
-- Figma  
-- GitHub  
-- Visual Studio Code  
-
-**Deployment:**
-- Vercel  
-- Cloudflare (for security & DNS)
+[valentine.dev](https://valentine.dev)
 
 ---
 
-## 🧩 Featured Project
+## Overview
 
-### 🌍 [GeoEvent](https://geoevent.ca)  
-An event discovery platform built with real-time filtering, map integration, and responsive UI.
-
----
-
-## 🏆 Highlights
-
-- 🎓 Ontario College Diploma in Computer Programming (GPA: 3.92)
-- 🏅 Best of Program & Best Final Year Project — Conestoga College
-- 🥇 Google UX Design & Meta Front-End Developer Certificates
+A fast, minimal portfolio focused on **shipped work with live demos** and **case-study-style project write-ups** (problem → build → outcome). Led by **FlowForce**, an AI CRM for sales teams and real estate brokerages.
 
 ---
 
-## 📫 Contact
+## Featured project
 
-If you'd like to work together or want to talk shop, reach me at:  
-📧 [hello@valentine.dev](mailto:hello@valentine.dev)
+### [FlowForce](https://flowforce.app)
+
+AI-powered CRM: pipeline, power/parallel dialer, cadences, Ask Flow, and AI Agents. Founding Engineer (Nov 2025 – Present).
+
+Also featured: [GeoEvent](https://geoevent.ca), [Applyfit](https://applyfit.ca), [ImageMark](https://imagemark.app).
 
 ---
 
-## ⚠️ License
+## This site’s stack
 
-This codebase is for portfolio and educational purposes only.  
-Please do not reuse without permission.
+- HTML, CSS, JavaScript (custom theme)
+- GSAP scroll animations, GLightbox
+- Cloudflare Turnstile, Google Analytics
+- Deployed at valentine.dev (static hosting)
 
+**Product work** (FlowForce, GeoEvent, etc.) uses React, TypeScript, Node.js, Next.js, MongoDB, and Vercel where applicable.
+
+---
+
+## Highlights
+
+- Founding Engineer @ FlowForce
+- Ontario College Diploma in Computer Programming (GPA: 3.92)
+- Best of Program & Best Final Year Project — Conestoga College
+- Google UX Design & Meta Front-End Developer Certificates
+
+---
+
+## Contact
+
+[hello@valentine.dev](mailto:hello@valentine.dev)
+
+---
+
+## License
+
+Portfolio and educational use only. Please do not reuse without permission.
