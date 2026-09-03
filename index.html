@@ -17,6 +17,7 @@
   <meta name="keywords"
     content="Founding Engineer, Full Stack Developer, AI SaaS, React, TypeScript, Node.js, FlowForce, Valentine Ohalebo" />
   <meta name="author" content="Valentine Ohalebo" />
+  <!-- nosemgrep: missing-integrity -- canonical link is not a subresource fetch; integrity attribute does not apply -->
   <link rel="canonical" href="https://valentine.dev/" />
 
   <!-- FAVICON -->
@@ -75,9 +76,11 @@
   </style>
 
   <!-- Cloudflare scripts -->
+  <!-- nosemgrep: missing-integrity -- Cloudflare Turnstile is served dynamically; SRI is unsupported and would break the widget -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
   <!-- Google tag (gtag.js) -->
+  <!-- nosemgrep: missing-integrity -- Google gtag.js is served dynamically; SRI is unsupported and would break analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6CDKP93TN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -249,10 +252,6 @@
                 <a href="#work" class="hero-action hero-action--primary scroll-to">
                   View work<span class="ti-arrow-right"></span>
                 </a>
-                <a href="assets/resume/Valentine_Ohalebo_Resume.pdf" class="hero-action" target="_blank"
-                  rel="noopener noreferrer">
-                  Resume<span class="ti-arrow-down"></span>
-                </a>
                 <a href="#contact" class="hero-action scroll-to">
                   Contact<span class="ti-arrow-right"></span>
                 </a>
@@ -337,23 +336,18 @@
                         </p>
                         <p class="color-white m-b-1">Founding Engineer</p>
                         <p>
-                          Lead engineering on FlowForce, an AI CRM that unifies pipeline,
-                          power dialing, cadences, and inbox outreach. Built core product
-                          surfaces, AI-assisted workflows (Ask Flow, AI Agents), and
-                          integrations that replace fragmented CRM + dialer + sequencer stacks
-                          for sales teams and brokerages.
+                          Lead engineering on FlowForce, an AI CRM for sales teams and brokerages. Built the core product including pipeline, power dialing, cadences, AI Agents, and integrations that replace fragmented sales tooling.
                         </p>
                       </div>
                       <!-- /ITEM -->
                     <!-- ITEM -->
                     <div class="item m-b-6 scroll-animation">
                       <p class="color-white m-b-1-5 small">
-                        Naija Jollof<span class="m-l-2 color-white">Jul 2024 - Present</span>
+                        Naija Jollof<span class="m-l-2 color-white">Apr 2025 - Present</span>
                       </p>
-                      <p class="color-white m-b-1">Software Developer</p>
+                      <p class="color-white m-b-1">Full Stack Developer</p>
                       <p>
-                        Maintained and enhanced a multilingual restaurant platform with seasonal features and responsive
-                        layouts
+                        Built and maintained the restaurant website and web app, covering online ordering, table reservations, and menu pages. Kept performance, uptime, and checkout flow reliable through regular updates, seasonal launches, and third-party integrations.
                       </p>
                     </div>
                     <!-- /ITEM -->
@@ -366,9 +360,19 @@
                       </p>
                       <p class="color-white m-b-1">Junior Software Developer</p>
                       <p>
-                        Revamped internal inventory and consultation management tools using Azure DevOps, increasing
-                        operational efficiency by 25% and
-                        significantly reducing downtime.
+                        Revamped internal inventory and consultation management tools using Azure DevOps. Increased operational efficiency by 25% and significantly reduced downtime.
+                      </p>
+                    </div>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <div class="item m-b-6 scroll-animation">
+                      <p class="color-white m-b-1-5 small">
+                        Balija Eye Care<span class="m-l-2 color-white">Sept 2018 - Sept 2020</span>
+                      </p>
+                      <p class="color-white m-b-1">Frontend Developer</p>
+                      <p>
+                        Built and maintained the clinic website including appointment booking and eye exam information. Improved performance, security, and user experience through ongoing testing and updates.
                       </p>
                     </div>
                     <!-- /ITEM -->
@@ -406,13 +410,6 @@
                   <!-- /RESUME ITEM -->
                 </div>
 
-                <!-- BUTTON -->
-                <button type="submit" class="default-button button-border m-b-3 m-t-5"
-                  onclick="window.open('assets/resume/Valentine_Ohalebo_Resume.pdf', '_blank')">
-                  <span class="ti-arrow-down icon"></span>
-                  <span class="button-text m-l-2">Download full resume</span>
-                </button>
-                <!-- /BUTTON -->
               </div>
               <!-- /RESUME -->
             </div>
@@ -978,13 +975,6 @@
                   <!-- /RESUME ITEM -->
                 </div>
 
-                <!-- BUTTON -->
-                <button type="submit" class="default-button button-border m-b-3 m-t-5"
-                  onclick="window.open('assets/resume/Valentine_Ohalebo_Resume.pdf', '_blank')">
-                  <span class="ti-arrow-down icon"></span>
-                  <span class="button-text m-l-2">Download full resume</span>
-                </button>
-                <!-- /BUTTON -->
               </div>
               <!-- /RESUME -->
             </div>
